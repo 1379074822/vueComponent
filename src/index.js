@@ -1,9 +1,13 @@
 import radioTable from './component/radioTable/radioTable'
 import pageSelect from './component/pageSelect/pageSelect'
+import description from './component/descriptions/description'
+import descriptionItem from './component/descriptions/description-item'
 import Vue from "vue"
 const lycUI = {
   "radioTable":radioTable,
-  "pageSelect":pageSelect
+  "pageSelect":pageSelect,
+  "description":description,
+  "descriptionItem":descriptionItem
 }
 
 

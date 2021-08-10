@@ -8,7 +8,7 @@
      border
      @current-change="changeChoose"
    >
-     <el-table-column  width="32" :resizable="false">
+     <el-table-column  width="32" :resizable="resizable">
        <template slot-scope="scope">
          <el-radio v-model="checkValue" :label="scope.row[radioKey]">
            {{""}}
@@ -27,7 +27,7 @@
     data() {
       return {
         options: [],  //总数据
-
+        resizable:false
       };
     },
     props: {
