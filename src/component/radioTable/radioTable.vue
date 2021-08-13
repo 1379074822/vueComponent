@@ -48,8 +48,7 @@
     },
     methods: {
       changeChoose(val){
-        this.checkValue=val[this.radioKey]
-        this.$emit("update:checkValue",this.checkValue)
+        this.$emit("update:checkValue",val[this.radioKey])
       },
     },
     //监听来自父组件的数据，当数据更新时，重置展示
